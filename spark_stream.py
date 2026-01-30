@@ -5,7 +5,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col
 from pyspark.sql.types import StructType, StructField, StringType
 import numpy
-
+import pandas
+import matplotlib
 def create_keyspace(session):
     session.execute("""
         CREATE KEYSPACE IF NOT EXISTS spark_streams
